@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TakeYourPrice</title>
+    <title>FunFart</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,12 +37,15 @@
     </style>
 </head>
 <body>
-    <h1>Beti Tkefet Clicki Hna </h1>
-    <button onclick="showAlert()">Here !</button>
+    <h1>Just Click </h1>
+    <button onclick="playSound()">Here</button>
+
+    <audio id="mySound" src="Fart.mp3"></audio> <!-- استبدل "Fart.mp3" بمسار ملف الصوت -->
 
     <script>
-        function showAlert() {
-            window.location.href = 'https://www.pornhub.com/'; // استبدل هذا برابط الموقع المطلوب
+        function playSound() {
+            var audio = document.getElementById('mySound');
+            audio.play();
         }
     </script>
 </body>
