@@ -1,52 +1,1 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunFart</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            background-image: url('Dark.jpg'); /* استبدل هذا المسار بمسار صورة الخلفية */
-            background-size: cover;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-        }
-
-        h1 {
-            color: #333;
-            background-color: rgba(255, 255, 255, 0.8); /* إضافة خلفية لجعل النص أكثر وضوحًا */
-            display: inline-block;
-            padding: 10px;
-            border-radius: 8px;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Just Click </h1>
-    <button onclick="playSound()">Here</button>
-
-    <audio id="mySound" src="Fart.mp3"></audio> <!-- استبدل "Fart.mp3" بمسار ملف الصوت -->
-
-    <script>
-        function playSound() {
-            var audio = document.getElementById('mySound');
-            audio.play();
-        }
-    </script>
-</body>
-</html>
+<!DOCTYPE html><html lang="ar"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>About me</title>    <style>        body {            font-family: Georgia, sans-serif;            margin: 0;            height: 100vh;            display: flex;            justify-content: space-between;            align-items: center;            padding: 0 20px;            color: white;            /* خلفية صورة GIF */            background-image: url('saw.gif'); /* استبدل بـ اسم صورة GIF */            background-size: cover;            background-repeat: no-repeat;            background-position: center;        }        /* تأثير fade-in */        .fade-in {            opacity: 0; /* البداية غير مرئية */            animation: fadeIn 2s ease-in forwards; /* تطبيق الرسوم مرة واحدة وبقاء العنصر مرئيًا */        }        @keyframes fadeIn {            from {                opacity: 0; /* تبدأ من الشفافية الكاملة */            }            to {                opacity: 1; /* تظهر كاملة */            }        }        .image-container {            flex: 1;            display: flex;            justify-content: center;            animation: fadeIn 2s ease-in forwards; /* تطبيق التأثير على الصورة */        }        .image-container img {            max-width: 80%;            height: auto;            border-radius: 8px;            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);        }        .text-container {            flex: 1;            text-align: right;            padding: 20px;            background-color: rgba(0, 0, 0, 0.5); /* خلفية شفافة للنص */            border-radius: 8px;            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);            margin-left: 20px;            animation: fadeIn 2s ease-in forwards; /* تطبيق التأثير على النص */        }        .text-container h1 {            font-size: 1.8rem;            margin-bottom: 15px;        }        .text-container p {            font-size: 1rem;            line-height: 1.6;        }        .text-container a {            display: inline-block;            text-decoration: none;            background-color: #4CAF50;            color: white;            padding: 10px 20px;            font-size: 1rem;            cursor: pointer;            border-radius: 8px;            margin-top: 15px;            transition: background-color 0.3s ease;        }        .text-container a:hover {            background-color: #ffffff;            color: #4CAF50;        }        audio {            display: none; /* إخفاء مشغل الصوت */        }    </style></head><body>    <div class="image-container fade-in">        <img src="hs2.jpg" alt="وصف الصورة">    </div>    <div class="text-container fade-in">        <h1>A7med Lmt</h1>        <p>            عطيني نكتب ليك شي حاجا هنا .        </p>        <a href="https://www.instagram.com/a7meed__lmt/" target="_blank">My Instagram</a>    </div>    <!-- إضافة مشغل الموسيقى -->    <audio autoplay loop>        <source src="your-music.mp3" type="audio/mpeg">        متصفحك لا يدعم تشغيل الصوت.    </audio></body></html>
